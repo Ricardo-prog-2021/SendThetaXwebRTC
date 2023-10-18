@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+    <script type="module" crossorigin src="./assets/index.baf86115.js"></script>
+    <link rel="stylesheet" href="./assets/index.2847f842.css">
+  </head>
+  <body>
+    <h2>1. Select Sender or Receiver</h2>
+    <button id="senderButton">Sender</button>
+    <button id="receiverButton">Receiver</button>
+
+    <h2>2. Start Camera & Coms</h2>
+    <div class="videos">
+      <span>
+        <h3 id="locStream">Local Stream</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3 id="remStream">Remote Stream</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+
+
+    </div>
+
+    <button id="webcamButton">Start Coms</button>
+    <h2>3. Create a new Call</h2>
+    <button id="callButton" disabled>Create Call (offer)</button>
+
+    <h2>4. Join a Call</h2>
+    <p>Answer the call from a different browser window or device</p>
+    
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+
+    <h2>5. Hangup</h2>
+
+    <button id="hangupButton" disabled>Hangup</button>
+
+    <div> </div>
+
+    
+
+  </body>
+</html>
